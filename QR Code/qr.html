@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>QR Code Generator</title>
+<link rel="stylesheet" href="qr.css" />
+<script src="qr.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.js" integrity="sha512-6WOG76AXc8rlgtGYLGhDg7lIzZG2Cc+VrSamvgpeBYgxauGuoMua6uKll4OsZ0JvVSt12lRX/9uCmXzkt3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head>
+<body>
+<div class="code">
+  <form id="form">
+    <div class="fo  rm_container">
+      <label for="urlInput">Enter the URL:</label>
+      <input type="url" id="urlInput" placeholder="Enter the URL" required />
+    </div>
+    <div class="form_container">
+      <label for="size">Select the size:</label>
+      <select id="size" name="size">
+        <option value="100">100*100</option>
+        <option value="200">200*200</option>
+        <option value="300">300*300</option>
+        <option value="400">400*400</option>
+      </select>
+    </div>
+    <div class="form_container">
+      <label for="colorDarkInput">Color Dark:</label>
+      <input type="color" id="colorDarkInput" value="#000000" />
+    </div>
+    <div class="form_container">
+      <label for="colorLightInput">Color Light:</label>
+      <input type="color" id="colorLightInput" value="#ffffff" />
+    </div>
+    <button type="submit" id="btn">Generate</button>
+    <a href="#" id="btn-save" download>Download</a>
+  </form>
+</div>
+<div class="output">
+  <div id="qrcode"></div>
+  <div id="load">
+    <div id="spinner"></div>  
+    <p>Please wait...</p>
+  </div>
+</div>
+</body>
+</html>

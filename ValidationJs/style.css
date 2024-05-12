@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+#form {
+    color: aliceblue;
+    align-items: center;
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    background-color: black;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+#form button {
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(0, 0, 146);
+    font-family: "poppins", "sans-serif";
+    color: azure;
+    margin: 20px 0px;
+    width: 100%;
+
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    color: rgb(249, 255, 249);
+    margin-bottom: 15px;
+}
+
+.label input {
+    border-radius: 5px;
+    margin-top: 10px;
+    /*box and text b/w la */
+    border: 3px solid rgb(0, 27, 114);
+    /*outer of text box color when clicked*/
+    font-size: 20px;
+    font-family: Poppins;
+    user-select: none;
+}
+
+.label input:focus {
+    outline: 0;
+}
+
+.label .error {
+    color: brown;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+.label.success input{
+    border-color: rgb(0, 202, 0);
+}
+.label.error input{
+    border-color: rgb(202, 0, 0);
+}

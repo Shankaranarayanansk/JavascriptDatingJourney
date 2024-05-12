@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body{
+    font-family: "Poetsen One", sans-serif;
+    background-color: rgb(232, 228, 228);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form
+{
+    margin: 20px;
+}
+.cityname
+{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border:2px solid red;
+    border-radius:10px;
+    width: 300px;
+    margin:10px;
+
+}
+button[type="submit"]
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color:white; 
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+      
+}
+button[type="submit"]:hover
+{
+    background-color:rgb(0, 255, 0);
+
+    color: rgb(0, 0, 0);
+   
+}
+.card
+{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,204,230,0.8155637254901961) 56%);
+    padding: 50px;
+    box-shadow: black;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+}
+h1
+{
+    font-size:3.5rem;
+    margin-bottom: 0;
+    margin-bottom: 25px;
+}
+.p
+{
+    font-size: 1.5rem;
+    margin: 5px;
+
+}
+.city,.temperature
+{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 25px; 
+}
+.humidity
+{
+    font-weight: bold;
+    margin:auto;
+    /* margin-bottom: 25px; */
+
+}
+.description
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.emoji
+{
+    margin: 0;
+    font-size: 7.5rem;
+    color: rgb(0, 0, 0);
+}
+.error
+{
+    font-size: 2.5rem;
+    font-weight:bold;
+    color: red;
+}
